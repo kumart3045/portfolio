@@ -1,97 +1,96 @@
-@media (max-width:500px){
-    .gallerybg{
-        background-color: #89043d;
-        margin: 2%;
-        padding:1rem;
-        display:flex;
-        
-    }
-    .about1>img{
-        width:25rem;
-        height:35rem;
-    }
-    .about1{
-        flex-direction:column;
-        align-items: center;
-    }
-    .iso{
-        width:25rem;
-        height:25rem;
-    }
-    .portrait1{
-        width:25rem;
-        height:32rem;
-    }
-    .portrait2{
-        width:25rem;
-        height:35rem;
-    }
-    .dosa{
-        width:25rem;
-        height:25rem;
-    }
-    .multi{
-        width:25rem;
-        height:32rem;
-    }
-    .lab10{
-        width:25rem;
-        height:45rem;
-    }
-    .gallerybg{
-        flex-wrap:wrap;
-    }
-    .row1{
-        flex-direction:column;
-        align-items: center;
-    }
-    .row2{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    header nav.show{
-        display:block;
-        position:absolute;
-        top:100%;
-        right:0;
-    }
-
-    header{
-        position:relative;
-    }
-
-    header nav{
-        transition-property: left;
-        transition-duration:.5s;
-        transition-timing-function:ease-in-out;
-        display:none;
-        background-color:#89043d;
-     }
-    .hamburger{
-        width:2rem;
-        color:#b2abf2;
-     }
-
-     .navtext{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-     }
-
-     .navtext>a{
-        margin:1rem;
-     }
+.gallerybg{
+    background-color: #89043d;
+    margin: 2%;
+    padding:1rem;
+    display:flex;
 
 }
+
+img{
+    max-width:100%;
+}
+.about1>img{
+    width:25rem;
+}
+.about1{
+    flex-direction:column;
+    align-items: center;
+}
+.iso{
+    width:25rem;
+    height:25rem;
+}
+.portrait1{
+    width:25rem;
+    height:32rem;
+}
+.portrait2{
+    width:25rem;
+    height:35rem;
+}
+.dosa{
+    width:25rem;
+    height:25rem;
+}
+.multi{
+    width:25rem;
+    height:32rem;
+}
+.lab10{
+    width:25rem;
+    height:45rem;
+}
+.gallerybg{
+    flex-wrap:wrap;
+}
+.row1{
+    flex-direction:column;
+    align-items: center;
+}
+.row2{
+    flex-direction:column;
+    align-items:center;
+}
+
+header nav.show{
+    display:block;
+    position:absolute;
+    top:100%;
+    right:0;
+}
+
+header{
+    position:relative;
+}
+
+header nav{
+    transition-property: left;
+    transition-duration:.5s;
+    transition-timing-function:ease-in-out;
+    display:none;
+    background-color:#89043d;
+}
+.hamburger{
+    width:2rem;
+    color:#b2abf2;
+}
+
+.navtext{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.navtext>a{
+    margin:1rem;
+}
+
+
 header{
     font-size:20px;
-    display:flex;
-    justify-content: space-between;
     background-color: #89043d;
     padding-left:1rem;
     padding-right:1rem;
-    align-items: center;
 }
 .gallerybg{
     background-color: #89043d;
@@ -101,15 +100,12 @@ header{
 .navtext>a{
     color: #b2abf2;
     position:relative;
-    margin:5rem;
 }
 
 .about1{
     color:#b2abf2;
     background-color: #89043d;
     margin:2%;
-    display:flex;
-    justify-content:space-between;
     padding:1rem;
 }
 
@@ -156,32 +152,65 @@ body{
     margin:2%;
 }
 
+.contact a{
+    color:#b2abf2;
+}
 
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media (min-width:1000px){
-   
     
+
+    header nav{
+        display:block;
+    }
+
+    .row1, .row2{
+        flex-direction:row;
+    }
+    .navtext>a{
+        margin:1rem;
+    }
+    .navtext{
+        flex-direction:row;
+    }
+    .about1{
+        display:flex;
+     justify-content:space-between;
+     flex-direction:row;
+     align-items:center;
+    }
     .about1>img{
         width:280px;
+        height:unset;
     }
     .iso{
-        width:500px;
+        width:30%;
+        height:unset;
     }
     .portrait1{
-        width:400px;
+        width:30%;
+        height:unset;
     }
     .portrait2{
-        width:350px;
+        width:30%;
+        height:unset;
     }
     .dosa{
-        width:500px; 
-        height:500px; 
+        width:30%;
+        height:unset;
     }
     .multi{
-        width:400px;
+        width:30%;
+        height:unset;
     }
     .lab10{
-        width:350px;
+        width:30%;
+        height:unset;
     }
 
     .hamburger{
