@@ -1,24 +1,4 @@
-header{
-    font-size:20px;
-    display:flex;
-    justify-content: space-between;
-    background-color: #89043d;
-    padding-left:1rem;
-    padding-right:1rem;
-    align-items: center;
-}
 
-.navtext>a{
-    color: #b2abf2;
-    position:relative;
-    margin:5rem;
-}
-
-.gallerybg{
-    background-color: #89043d;
-    margin: 2%;
-    padding:1rem;
-}
 
 .galleryheading{
     color:#b2abf2;
@@ -29,42 +9,183 @@ body{
     background-color:#1c3041;
 }
 
-.row1{
-    display:flex;
-    justify-content: space-between;
-}
-
-.row2{
-    display:flex;
-    justify-content: space-between;
-}
 
 .aboutheading{
     color:#b2abf2;
     margin:2%;
 }
 
-.about1{
-    color:#b2abf2;
-    background-color: #89043d;
-    margin:2%;
-    display:flex;
-    justify-content:space-between;
-    padding:1rem;
+
+
+@media (min-width:1000px){
+    header{
+        font-size:20px;
+        display:flex;
+        justify-content: space-between;
+        background-color: #89043d;
+        padding-left:1rem;
+        padding-right:1rem;
+        align-items: center;
+    }
+    .gallerybg{
+        background-color: #89043d;
+        margin: 2%;
+        padding:1rem;
+    }
+    .navtext>a{
+        color: #b2abf2;
+        position:relative;
+        margin:5rem;
+    }
+
+    .about1{
+        color:#b2abf2;
+        background-color: #89043d;
+        margin:2%;
+        display:flex;
+        justify-content:space-between;
+        padding:1rem;
+    }
+    
+    footer{
+        background-color:#89043d;
+        color:#b2abf2;
+        display:flex;
+        justify-content:flex-start;
+        padding-left:1rem;
+        padding-right:1rem;
+        align-items: center;
+    }
+    
+    .about1>div{
+        padding-left: 1rem;
+    }
+    
+    .info{
+        padding-left:1rem;
+    }
+
+    .row1{
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .row2{
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .about1>img{
+        width:280px;
+    }
+    .iso{
+        width:500px;
+    }
+    .portrait1{
+        width:400px;
+    }
+    .portrait2{
+        width:350px;
+    }
+    .dosa{
+        width:500px; 
+        height:500px; 
+    }
+    .multi{
+        width:400px;
+    }
+    .lab10{
+        width:350px;
+    }
+
+    .hamburger{
+        display:none;
+    }
 }
 
-footer{
-    background-color:#89043d;
-    color:#b2abf2;
-    display:flex;
-    justify-content:flex-start;
-    padding-left:1rem;
-}
+@media (max-width:500px){
+    .gallerybg{
+        background-color: #89043d;
+        margin: 2%;
+        padding:1rem;
+        display:flex;
+        
+    }
+    .about1>img{
+        width:25rem;
+        height:35rem;
+    }
+    .about1{
+        flex-direction:column;
+        align-items: center;
+    }
+    .iso{
+        width:25rem;
+        height:25rem;
+    }
+    .portrait1{
+        width:25rem;
+        height:32rem;
+    }
+    .portrait2{
+        width:25rem;
+        height:35rem;
+    }
+    .dosa{
+        width:25rem;
+        height:25rem;
+    }
+    .multi{
+        width:25rem;
+        height:32rem;
+    }
+    .lab10{
+        width:25rem;
+        height:45rem;
+    }
+    .gallerybg{
+        flex-wrap:wrap;
+    }
+    .row1{
+        flex-direction:column;
+        align-items: center;
+    }
+    .row2{
+        flex-direction:column;
+        align-items:center;
+    }
 
-.about1>div{
-    padding-left: 1rem;
-}
+    header nav.show{
+        display:block;
+        position:absolute;
+        top:100%;
+        right:0;
+    }
 
-.info{
-    padding-left:1rem;
+    header{
+        position:relative;
+    }
+
+    header nav{
+        transition-property: left;
+        transition-duration:.5s;
+        transition-timing-function:ease-in-out;
+        display:none;
+        background-color:#89043d;
+     }
+    .hamburger{
+        width:2rem;
+        color:#b2abf2;
+     }
+
+     .navtext{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+     }
+
+     .navtext>a{
+        margin:1rem;
+     }
+
 }
