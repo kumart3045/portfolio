@@ -1,3 +1,89 @@
+@media (max-width:500px){
+    .gallerybg{
+        background-color: #89043d;
+        margin: 2%;
+        padding:1rem;
+        display:flex;
+        
+    }
+    .about1>img{
+        width:25rem;
+        height:35rem;
+    }
+    .about1{
+        flex-direction:column;
+        align-items: center;
+    }
+    .iso{
+        width:25rem;
+        height:25rem;
+    }
+    .portrait1{
+        width:25rem;
+        height:32rem;
+    }
+    .portrait2{
+        width:25rem;
+        height:35rem;
+    }
+    .dosa{
+        width:25rem;
+        height:25rem;
+    }
+    .multi{
+        width:25rem;
+        height:32rem;
+    }
+    .lab10{
+        width:25rem;
+        height:45rem;
+    }
+    .gallerybg{
+        flex-wrap:wrap;
+    }
+    .row1{
+        flex-direction:column;
+        align-items: center;
+    }
+    .row2{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    header nav.show{
+        display:block;
+        position:absolute;
+        top:100%;
+        right:0;
+    }
+
+    header{
+        position:relative;
+    }
+
+    header nav{
+        transition-property: left;
+        transition-duration:.5s;
+        transition-timing-function:ease-in-out;
+        display:none;
+        background-color:#89043d;
+     }
+    .hamburger{
+        width:2rem;
+        color:#b2abf2;
+     }
+
+     .navtext{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+     }
+
+     .navtext>a{
+        margin:1rem;
+     }
+
+}
 header{
     font-size:20px;
     display:flex;
@@ -103,89 +189,3 @@ body{
     }
 }
 
-@media (max-width:500px){
-    .gallerybg{
-        background-color: #89043d;
-        margin: 2%;
-        padding:1rem;
-        display:flex;
-        
-    }
-    .about1>img{
-        width:25rem;
-        height:35rem;
-    }
-    .about1{
-        flex-direction:column;
-        align-items: center;
-    }
-    .iso{
-        width:25rem;
-        height:25rem;
-    }
-    .portrait1{
-        width:25rem;
-        height:32rem;
-    }
-    .portrait2{
-        width:25rem;
-        height:35rem;
-    }
-    .dosa{
-        width:25rem;
-        height:25rem;
-    }
-    .multi{
-        width:25rem;
-        height:32rem;
-    }
-    .lab10{
-        width:25rem;
-        height:45rem;
-    }
-    .gallerybg{
-        flex-wrap:wrap;
-    }
-    .row1{
-        flex-direction:column;
-        align-items: center;
-    }
-    .row2{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    header nav.show{
-        display:block;
-        position:absolute;
-        top:100%;
-        right:0;
-    }
-
-    header{
-        position:relative;
-    }
-
-    header nav{
-        transition-property: left;
-        transition-duration:.5s;
-        transition-timing-function:ease-in-out;
-        display:none;
-        background-color:#89043d;
-     }
-    .hamburger{
-        width:2rem;
-        color:#b2abf2;
-     }
-
-     .navtext{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-     }
-
-     .navtext>a{
-        margin:1rem;
-     }
-
-}
